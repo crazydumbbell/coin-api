@@ -37,7 +37,103 @@ const App = () => {
           {/* 기존 CSS랑 슬릭CSS랑 충돌해서 ul태그에 다른 css 넣으면 
       아예 안떠버림 */}
      <div className="flex justify-center items-center text-lg text-red-800">코인이 왕이다</div>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
+          <Slider autoplay={true} autoplaySpeed={200} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={400} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={600} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={800} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={1000} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={1200} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={1400} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={1600} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={1800} arrows={false} dots={true} >
             {coinPrices.map((v, i) => {
               return (
                 <CoinCard
@@ -61,7 +157,7 @@ const App = () => {
               );
             })}
           </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
+          <Slider autoplay={true} autoplaySpeed={2200} arrows={false} dots={true} >
             {coinPrices.map((v, i) => {
               return (
                 <CoinCard
@@ -73,7 +169,7 @@ const App = () => {
               );
             })}
           </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
+          <Slider autoplay={true} autoplaySpeed={2400} arrows={false} dots={true} >
             {coinPrices.map((v, i) => {
               return (
                 <CoinCard
@@ -85,7 +181,7 @@ const App = () => {
               );
             })}
           </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
+          <Slider autoplay={true} autoplaySpeed={2800} arrows={false} dots={true} >
             {coinPrices.map((v, i) => {
               return (
                 <CoinCard
@@ -97,103 +193,7 @@ const App = () => {
               );
             })}
           </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2000} arrows={false} dots={true} >
+          <Slider autoplay={true} autoplaySpeed={3000} arrows={false} dots={true} >
             {coinPrices.map((v, i) => {
               return (
                 <CoinCard
