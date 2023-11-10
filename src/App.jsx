@@ -169,31 +169,31 @@ const App = () => {
               );
             })}
           </Slider>
-          <Slider autoplay={true} autoplaySpeed={2400} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
-          <Slider autoplay={true} autoplaySpeed={2800} arrows={false} dots={true} >
-            {coinPrices.map((v, i) => {
-              return (
-                <CoinCard
-                  key={i}
-                  coinPrice={v}
-                  btcPrice={coinPrices[0].trade_price}
-                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
-                />
-              );
-            })}
-          </Slider>
           <Slider autoplay={true} autoplaySpeed={3000} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={4000} arrows={false} dots={true} >
+            {coinPrices.map((v, i) => {
+              return (
+                <CoinCard
+                  key={i}
+                  coinPrice={v}
+                  btcPrice={coinPrices[0].trade_price}
+                  // 내려받은 btcPrice를 기존의 coinPrices의 가격으로 출력
+                />
+              );
+            })}
+          </Slider>
+          <Slider autoplay={true} autoplaySpeed={5000} arrows={false} dots={true} >
             {coinPrices.map((v, i) => {
               return (
                 <CoinCard
