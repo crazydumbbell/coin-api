@@ -4,7 +4,7 @@ const CoinCard = ({ coinPrice, btcPrice }) => {
       <img
         className="w-6 inline-block"
         //블록이라서 인라인블록으로 바꿈 이미지 위에 붙으니까 옆으로
-        src={`./images/${coinPrice.market.substring(4)}.png`}
+        src={process.env.PUBLIC_URL+`./images/${coinPrice.market.substring(4)}.png`}
         alt={`${coinPrice.market.substring(4)}`}
         // 알트값은 이미지 안뜰때 뜨는 값//
       />
